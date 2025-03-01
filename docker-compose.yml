@@ -1,0 +1,27 @@
+services:
+  flaskapp:
+    build: ./api
+    ports:
+      - "5000:5000"
+    container_name: flaskapp-container
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+    restart: unless-stopped
+    volumes: 
+    - image-volume:/app/src/static/images
+
+
+  react-app:
+    depends_on:
+      - flaskapp
+    build: ./final_react/my-app
+    container_name: react-app-container
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    environment:
+      - NODE_ENV=development
+
+volumes:
+  image-volume:

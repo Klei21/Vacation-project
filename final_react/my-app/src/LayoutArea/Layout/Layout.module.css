@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+.Layout {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto 1fr; /* Esto ya divide la estructura */
+}
+
+
+header {
+    grid-row: 1;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/02/98/09/27/1000_F_298092780_X6nbDgI4gbhKY8fxM9lIEm2qB8RwUWwr.jpg');
+    background-size: cover; /* Esto asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 150px;    
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media (prefers-color-scheme: light) {
+    menu {
+    grid-row: 2;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid #ccc; /* Línea para separar más visualmente la cabecera del menú */
+    background-color: #ffffff;
+}
+}
+
+
+.Layout > * {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: rgb(0, 140, 255);
+    border: 1px solid rgb(82, 82, 236);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.btn2 {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+    background-color: rgb(0, 140, 255);
+    border: 1px solid rgb(82, 82, 236);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.myuserbutton{
+    background-color: #00dbf830;
+    color: rgb(255, 251, 251);
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 3vh;
+    left: 7vw;
+    z-index: 10;
+}
+
+.myuserbutton:hover{
+    background-color: #3e00f830 ;
+}

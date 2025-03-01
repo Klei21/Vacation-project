@@ -1,0 +1,18 @@
+.usercard {
+    background-color: lightblue;
+    width: 100vw;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.usercard h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.usercard p {
+    text-align: center;
+}
+

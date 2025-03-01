@@ -1,0 +1,59 @@
+.cardcontainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.updcard {
+    background-color: lightblue;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.updcard h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formgroup {
+    margin-bottom: 15px;
+}
+
+.formgroup label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.formgroup input, .formgroup select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

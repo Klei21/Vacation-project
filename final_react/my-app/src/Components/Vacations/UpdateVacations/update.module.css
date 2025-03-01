@@ -1,0 +1,78 @@
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente */
+  height: 100%;
+  background-color: #e6e5e7;
+  padding: 10px; /* Añadido padding para evitar que se toque los bordes */
+  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño */
+}
+
+.updcard {
+  background-color: lightblue;
+  height: auto;
+  width: 100%;
+  max-width: 400px; /* Mantiene el máximo ancho */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Asegura que el padding no sobresalga del tamaño máximo */
+}
+
+.updcard h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formgroup {
+  margin-bottom: 15px;
+}
+
+.formgroup label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.formgroup input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Asegura que el padding no agregue desbordamiento */
+}
+
+.btn, .btn1 {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box; /* Asegura que no haya desbordamiento */
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn1 {
+  background-color: #f82020;
+  color: white;
+}
+
+.btn1:hover {
+  background-color: #ce1e1e;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
