@@ -4,7 +4,7 @@ import styles from './Layout.module.css';
 import { Sidebar } from "../Header/Header";
 import { NavButtons } from "./NavButtons";
 export function Layout(): JSX.Element {
-  document.title = "Vacation Protocol";
+  document.title = "WanderLike";
   return (
     <BrowserRouter>
     <NavButtons/>
